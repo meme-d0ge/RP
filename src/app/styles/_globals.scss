@@ -3,10 +3,7 @@ body {
   font-weight: 500;
   line-height: 1.28;
   color: var(--color-light);
-  background-color: var(--color-dark);
-  background-image: url("/public/background.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(270deg, rgba(7, 7, 7, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%), url("/public/background.png") no-repeat center;
 }
 
 a,
