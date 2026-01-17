@@ -1,0 +1,67 @@
+@import "@/app/styles/mixins";
+.wallet-container {
+  display:  flex;
+  height: 100px;
+  flex-direction: row;
+  gap: 20px
+}
+
+.wallet {
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+  padding: 16px;
+  border-radius: var(--border-radius-small);
+  background: linear-gradient(270deg, rgba(217, 217, 217, 0.1) 0%, rgba(115, 115, 115, 0) 92.31%);
+}
+.wallet-amount {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.wallet-amount-count {
+  width: 220px;
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1;
+
+  overflow: hidden; /* Скрываем всё, что не поместилось */
+  white-space: nowrap; /* Не переносим текст на новую строку */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
+.wallet-amount-coin {
+  width: 48px;
+  height: 48px;
+  color: var(--color-accent)
+}
+
+.wallet-button {
+  @include reset-button();
+  border-radius: var(--border-radius-small);
+  background: #FFFFFF1A;
+  padding: 20px;
+}
+.wallet-button-svg {
+  color: var(--color-light);
+  width: 30px;
+  height: 30px;
+}
+
+.wallet-button-close {
+  @include reset-button();
+  background: linear-gradient(93.07deg, rgba(255, 255, 255, 0.2) 0%, rgba(153, 153, 153, 0.16) 100%);
+  border-radius: var(--border-radius);
+  padding: 28.75px;
+  backdrop-filter: blur(25px);
+  border: 1px solid;
+  border-image-source: radial-gradient(126.67% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.wallet-button-close-svg {
+  width: 42.5px;
+  height: 42.5px;
+  color: var(--color-light);
+}

@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  height: 74px;
+}
+.logo-svg {
+  color: var(--color-accent-2);
+  width: 56px;
+  height: 54px;
+}
+
+.logo-text {
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  text-transform:  uppercase;
+}
+.logo-text-accent {
+  color: var(--color-accent-2);
+}

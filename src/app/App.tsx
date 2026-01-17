@@ -1,6 +1,11 @@
+import { TheHeader } from "@/widgets/TheHeader";
 
 function App() {
-	return null;
+	return (
+		<>
+			<TheHeader />
+		</>
+	);
 }
 
 export default App;
