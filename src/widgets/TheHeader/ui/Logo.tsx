@@ -1,6 +1,6 @@
 import type { ComponentProps } from "react";
 import { BasketIcon } from "@/shared/components/BasketIcon.tsx";
-import style from "./Logo.module.scss";
+import style from "./style/Logo.module.scss";
 export const Logo = ({ ...props }: ComponentProps<"a">) => {
 	return (
 		<a className={style.logo} {...props}>

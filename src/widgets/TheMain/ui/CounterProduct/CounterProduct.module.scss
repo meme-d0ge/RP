@@ -1,0 +1,28 @@
+.counter-container {
+  width: 100%;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 38px;
+
+  border-top-left-radius: var(--border-radius-large);
+  border-top-right-radius: var(--border-radius-large);
+  background: linear-gradient(93.07deg, rgba(255, 255, 255, 0.06) 0%, rgba(153, 153, 153, 0.048) 100%);
+  & > span{
+    font-family: var(--font-family-base);
+    font-weight: 500;
+    font-size: 36px;
+  }
+}
+.counter-quantity {
+  color: #FFFFFF80;
+}
+.counter-input{
+  margin: 0;
+  width: 100%;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}

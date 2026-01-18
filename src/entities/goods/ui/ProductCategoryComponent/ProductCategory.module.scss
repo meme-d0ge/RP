@@ -1,0 +1,25 @@
+.product-category {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  font-family: var(--font-family-base);
+  font-size: 36px;
+  padding: 36px;
+  border-radius: 20px;
+  align-items: center;
+  background: linear-gradient(93.07deg, rgba(255, 255, 255, 0.06) 0%, rgba(153, 153, 153, 0.048) 100%);
+  &--selected {
+    border: 1px solid #029BFF;
+  }
+
+  &-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.product-category-svg {
+  min-width: 40px;
+  min-height: 40px;
+  color: var(--color-accent-2);
+}

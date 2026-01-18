@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+
 }
 .wallet-amount-count {
   width: 220px;
@@ -41,6 +42,7 @@
 
 .wallet-button {
   @include reset-button();
+  cursor: pointer;
   border-radius: var(--border-radius-small);
   background: #FFFFFF1A;
   padding: 20px;
@@ -53,6 +55,7 @@
 
 .wallet-button-close {
   @include reset-button();
+  cursor: pointer;
   background: linear-gradient(93.07deg, rgba(255, 255, 255, 0.2) 0%, rgba(153, 153, 153, 0.16) 100%);
   border-radius: var(--border-radius);
   padding: 28.75px;

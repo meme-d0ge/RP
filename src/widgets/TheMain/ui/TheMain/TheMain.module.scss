@@ -1,0 +1,23 @@
+@import '@/app/styles/mixins';
+.main-container {}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.main-info {}
+.main-products {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  text-align: center;
+}
+.main-products-text{
+  width: 100%;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-size: 24px;
+  color: #8C8C8C;
+}

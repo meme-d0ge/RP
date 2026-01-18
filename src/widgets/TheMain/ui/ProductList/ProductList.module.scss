@@ -1,0 +1,16 @@
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+.product {
+  opacity: 1;
+  transition: opacity 1s;
+  cursor: pointer;
+}
+@starting-style {
+  .product {
+    opacity: 0;
+  }
+}

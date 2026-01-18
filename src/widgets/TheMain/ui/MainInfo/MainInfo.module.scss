@@ -1,0 +1,41 @@
+@import '@/app/styles/mixins';
+
+.main-info {
+  width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-info-select-goods {
+  @include reset-button();
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--color-light);
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 36px;
+
+  padding: 36px;
+  background: linear-gradient(93.07deg, rgba(255, 255, 255, 0.06) 0%, rgba(153, 153, 153, 0.048) 100%);
+  border: 1px solid;
+  border-radius: var(--border-radius-large);
+  border-image-source: radial-gradient(126.67% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.main-info-payment {
+  transition-duration: 0.7s;
+  opacity: 1;
+}
+@starting-style {
+  .main-info-payment {
+    opacity: 0;
+  }
+}
+.main-info-payment-methods {
+  margin-top: 60px;
+}
