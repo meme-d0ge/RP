@@ -17,6 +17,7 @@ export const ProductCategoryList = observer(
 							onClick={() => {
 								setSelectedCategoryId(category.id);
 							}}
+							id={category.id}
 							key={category.id}
 							text={category.text}
 							icon={category.icon}

@@ -1,5 +1,9 @@
 .counter-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-large);
+  overflow-x: hidden;
 }
 
 .counter {
@@ -11,7 +15,7 @@
   border-top-left-radius: var(--border-radius-large);
   border-top-right-radius: var(--border-radius-large);
   background: linear-gradient(93.07deg, rgba(255, 255, 255, 0.06) 0%, rgba(153, 153, 153, 0.048) 100%);
-  & > span{
+  & > span {
     font-family: var(--font-family-base);
     font-weight: 500;
     font-size: 36px;
@@ -21,8 +25,60 @@
   color: #FFFFFF80;
 }
 .counter-input{
+  appearance: none;
+  background: transparent;
+  height: 10px;
+  padding-bottom: 15px;
   margin: 0;
   width: 100%;
-  border-bottom-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
+  &::-webkit-slider-runnable-track {
+    height: 10px;
+    box-sizing: border-box;
+    background: #FFFFFF1A;
+  }
+  &::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 0 4px inset var(--color-accent-2);
+    transition: 300ms;
+  }
+  &:disabled::-webkit-slider-thumb{
+    box-shadow: 0 0 0 30px inset gray;
+  }
+  &::-moz-range-track {
+    height: 10px;
+    box-sizing: border-box;
+    background: #FFFFFF1A;
+  }
+  &::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 0 4px inset var(--color-accent-2);
+    transition: 300ms;
+  }
+  &:disabled::-moz-range-thumb {
+    box-shadow: 0 0 0 30px inset gray;
+  }
+
+  &::-moz-range-progress {
+    height: 8px;
+    border-radius: 10px;
+    background-color: var(--color-accent-2);
+  }
+  &::-webkit-slider-thumb {
+    border-image-outset: 0 100vw;
+    border-image-repeat: stretch;
+    border-image-slice: 0 1;
+    border-image-source: linear-gradient(90deg, var(--color-accent-2) 50%, #FFFFFF00 0);
+    border-image-width: calc(50% - 4px) 100vw;
+  }
 }

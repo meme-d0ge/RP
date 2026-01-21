@@ -4,12 +4,12 @@ import style from "./ProductComponent.module.scss";
 
 export const ProductComponent = ({
 	...props
-}: Omit<Product, "id"> & ComponentProps<"div"> & { isSelected: boolean }) => {
-	const { price, img, name, isSelected, className, ...rest } = props;
+}: Product & ComponentProps<"div"> & { isSelected: boolean }) => {
+	const { price, img, id, name, isSelected, className, ...res } = props;
 	return (
 		<div
 			className={`${style.product} ${isSelected ? style["product--selected"] : ""} ${className}`}
-			{...rest}
+			{...res}
 		>
 			<div className={style.productImageContainer}>
 				<img className={style.productImage} src={img} alt="" />

@@ -7,9 +7,9 @@ export const ProductCategoryComponent = ({
 	icon,
 	isSelected,
 	className,
+	id,
 	...res
-}: Omit<ProductCategory, "id"> &
-	ComponentProps<"div"> & { isSelected: boolean }) => {
+}: ProductCategory & ComponentProps<"div"> & { isSelected: boolean }) => {
 	return (
 		<div
 			className={`${style["product-category"]} ${isSelected ? style["product-category--selected"] : ""} ${className}`}

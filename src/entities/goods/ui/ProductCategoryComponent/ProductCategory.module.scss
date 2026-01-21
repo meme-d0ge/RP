@@ -8,6 +8,8 @@
   border-radius: 20px;
   align-items: center;
   background: linear-gradient(93.07deg, rgba(255, 255, 255, 0.06) 0%, rgba(153, 153, 153, 0.048) 100%);
+  border: 1px solid transparent;
+  transition-duration: 0.7s;
   &--selected {
     border: 1px solid #029BFF;
   }
